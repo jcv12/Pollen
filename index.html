@@ -14,39 +14,49 @@
   <header>
     <h1 class="page-title">Shoppers Budget</h1>
     <p>Click the button below to add a new item to the cart!</p>
-    <form id="task-form">
+    <form id="item-form">
+
         <div class="form-group">
-            <input type="text" name="task-name" placeholder="Enter Your Item"/>
+            <input type="text" name="item-name" placeholder="Enter Your Item"/>
         </div>
+
         <div class="form-group">
-            <select name="task-type" class="select-dropdown">
-              <option value="" disabled selected>Pick a task type</option>
-              <option value="Print">Need</option>
-              <option value="Web">Want</option>
-            </select>
-          </div>
-        <div class="form-group">
-            <button class="btn" id="save-task" type="submit">Add Item</button>
+          <input type="text" name="item-price" placeholder="$"/>
         </div>
+
+        <div class="form-group">
+          <button class="btn" id="save-need" type="submit">Need</button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn" id="save-want" type="submit">Want</button>
+        </div>
+
     </form>
   </header>
 
   <main class="page-content" id="page-content">
-    <section class="task-list-wrapper">
+    <section class="item-list-wrapper">
       <h2 class="list-title">Needs</h2>
-      <ul class="task-list" id="tasks-to-do">
+      <ul class="item-list" id="item-needs">
       </ul>
     </section>
 
-    <section class="task-list-wrapper">
+    <section class="item-list-wrapper">
       <h2 class="list-title">Wants</h2>
-      <ul class="task-list" id="tasks-in-progress">
+      <ul class="item-list" id="item-wants">
+      </ul>
+    </section>
+
+    <section class="item-list-wrapper">
+      <h2 class="list-title">Total</h2>
+      <ul class="item-list" id="item-total">
       </ul>
     </section>
   </main>
 
   <footer>
-    &copy;2020 by Mazi Tech
+    &copy;2022 by Mazi Tech
   </footer>
 
   <script src="./assets/js/script.js"></script>
